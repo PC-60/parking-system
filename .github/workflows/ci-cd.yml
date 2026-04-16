@@ -23,7 +23,7 @@ jobs:
       - name: Install & Build React
         run: |
           cd parking_system
-          npm ci
+          npm install
           npm run build
 
   # ✅ BACKEND TEST / INSTALL
