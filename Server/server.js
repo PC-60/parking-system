@@ -21,8 +21,9 @@ console.log("website started");
 // ✅ NEW
 const uri = process.env.MONGO_URI;
 
-const client = new MongoClient(uri);
-
+const client = new MongoClient(process.env.MONGO_URI, {
+  tls: true
+});
 async function connectToMongoDB() {
     try {
         await client.connect();
