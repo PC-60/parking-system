@@ -61,7 +61,7 @@ jobs:
       - name: Build React frontend
         run: |
           cd parking_system
-          npm ci
+          npm install
           npm run build
         env:
           CI: false
