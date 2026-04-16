@@ -143,8 +143,8 @@ jobs:
       # ── Option B: Deploy to Render.com ──
       # Add RENDER_DEPLOY_HOOK_URL as a GitHub secret.
       #
-      # - name: Trigger Render deploy
-      #   run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+       - name: Trigger Render deploy
+         run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
 
       - name: Deployment summary
         run: |
