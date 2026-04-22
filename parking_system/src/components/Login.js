@@ -47,7 +47,7 @@ const Login = ({ isAuthenticated, setIsAuthenticated }) => {
         <div className="auth-card">
           <div className="auth-brand">
             <div className="brand-icon">🅿</div>
-            <h1 className="brand-name">ParkEase</h1>
+            <h1 className="brand-name">DarkEase</h1>
             <p className="brand-tagline">Smart Parking, Simplified</p>
           </div>
 
