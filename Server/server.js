@@ -132,6 +132,15 @@ app.post("/Home/Slots", async (req, res) => {
     }
 });
 
+
+// Serve React build files
+app.use(express.static(path.join(__dirname, '../parking_system/build')));
+
+// All non-API routes return the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../parking_system/build', 'index.html'));
+});
+
 async function startServer() {
     try {
         await connectToMongoDB();
